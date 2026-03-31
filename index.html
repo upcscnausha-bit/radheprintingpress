@@ -1,199 +1,121 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Radhe Printing Press</title>
-  <style>
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:Arial,sans-serif;
-      background:#f8f8f8;
-      color:#222;
-    }
-    .hero{
-      background:linear-gradient(135deg,#7a0000,#d41717,#f5b400);
-      color:#fff;
-      padding:28px 16px;
-      text-align:center;
-    }
-    .hero h1{
-      margin:0;
-      font-size:34px;
-      font-weight:800;
-    }
-    .hero p{
-      margin:10px 0 0;
-      font-size:18px;
-    }
-    .cta{
-      display:inline-block;
-      margin-top:16px;
-      background:#25D366;
-      color:#fff;
-      padding:12px 22px;
-      border-radius:999px;
-      text-decoration:none;
-      font-weight:700;
-    }
-    .wrap{
-      max-width:1100px;
-      margin:auto;
-      padding:18px;
-    }
-    .card{
-      background:#fff;
-      border-radius:18px;
-      padding:18px;
-      box-shadow:0 8px 30px rgba(0,0,0,.08);
-      margin-bottom:18px;
-    }
-    .grid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:18px;
-    }
-    .services{
-      display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:12px;
-    }
-    .service{
-      background:#fff4d8;
-      border-radius:14px;
-      padding:14px;
-      font-weight:700;
-      text-align:center;
-    }
-    .offer{
-      background:#ffefef;
-      border:2px dashed #d41717;
-      text-align:center;
-    }
-    .offer h2{
-      margin:0 0 8px;
-      color:#b10000;
-      font-size:28px;
-    }
-    .price{
-      font-size:42px;
-      color:#d41717;
-      font-weight:900;
-    }
-    .poster{
-      width:100%;
-      border-radius:18px;
-      display:block;
-    }
-    .qr{
-      width:220px;
-      max-width:100%;
-      display:block;
-      margin:20px auto 10px;
-      border-radius:14px;
-    }
-    .paybtn{
-      display:inline-block;
-      background:#28a745;
-      color:#fff;
-      padding:12px 20px;
-      text-decoration:none;
-      border-radius:8px;
-      font-weight:700;
-      margin-top:8px;
-    }
-    .footer{
-      background:#111;
-      color:#fff;
-      text-align:center;
-      padding:18px 14px;
-    }
-    .floating-whatsapp{
-      position:fixed;
-      right:18px;
-      bottom:18px;
-      background:#25D366;
-      color:#fff;
-      padding:14px 20px;
-      border-radius:999px;
-      text-decoration:none;
-      font-weight:700;
-      box-shadow:0 12px 30px rgba(0,0,0,.25);
-      z-index:9999;
-    }
-    @media (max-width:780px){
-      .grid{grid-template-columns:1fr}
-      .hero h1{font-size:28px}
-      .services{grid-template-columns:1fr 1fr}
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radhe Printing Press</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f4f4f4;
+}
+
+.hero {
+  background: linear-gradient(90deg, red, orange);
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.btn {
+  background: #25D366;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.qr {
+  width: 200px;
+  margin: 10px auto;
+  display: block;
+}
+
+.paybtn {
+  background: green;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 12px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+</style>
 </head>
+
 <body>
 
-  <section class="hero">
-    <h1>RADHE PRINTING PRESS</h1>
-    <p>मनचाहा प्रिंट अब पाएं शानदार क्वालिटी में</p>
-    <p><strong>मोबाइल:</strong> 7467008398</p>
-    <a class="cta" href="https://wa.me/917467008398?text=Namaste%20Radhe%20Printing%20Press%2C%20mujhe%20printing%20order%20karna%20hai." target="_blank">WhatsApp पर ऑर्डर करें</a>
-  </section>
+<div class="hero">
+  <h1>RADHE PRINTING PRESS</h1>
+  <p>मनचाहा प्रिंट अब पाएं शानदार क्वालिटी में</p>
+  <p>मोबाइल: 7467008398</p>
+  <a href="https://wa.me/917467008398" class="btn">WhatsApp पर ऑर्डर करें</a>
+</div>
 
-  <div class="wrap">
+<div class="container">
 
-    <div class="grid">
-      <div class="card offer">
-        <h2>🔥 स्पेशल ऑफर 🔥</h2>
-        <div>टी-शर्ट प्रिंटिंग</div>
-        <div class="price">₹149/-</div>
-        <p>Bulk Order Discount • Free Delivery • Custom Design Available</p>
-      </div>
+<div class="card">
+  <h2>🔥 स्पेशल ऑफर 🔥</h2>
+  <h1>₹149/-</h1>
+  <p>टी-शर्ट प्रिंटिंग</p>
+</div>
 
-      <div class="card">
-        <h2 style="margin-top:0">हमारी सेवाएं</h2>
-        <div class="services">
-          <div class="service">टी-शर्ट प्रिंट</div>
-          <div class="service">मग प्रिंट</div>
-          <div class="service">सिपर बोतल प्रिंट</div>
-          <div class="service">फोटो फ्रेम</div>
-          <div class="service">कैप प्रिंट</div>
-          <div class="service">की-चेन प्रिंट</div>
-        </div>
-      </div>
-    </div>
+<div class="card">
+  <h2>हमारी सेवाएं</h2>
+  <p>टी-शर्ट प्रिंट | मग प्रिंट | सिपर बोतल | फोटो फ्रेम | कैप | की-चेन</p>
+</div>
 
-    <div class="grid">
-      <div class="card">
-        <h2 style="margin-top:0">हमारा बैनर</h2>
-        <img src="banner.jpg.jpeg" alt="Radhe Printing Press Banner" class="poster">
-      </div>
+<div class="card">
+  <h2>हमारा बैनर</h2>
+  <img src="banner.jpg.jpg" style="width:100%;">
+</div>
 
-      <div class="card" style="text-align:center">
-  <h2 style="margin-top:0">💳 Payment करें</h2>
+<div class="card">
+  <h2>💳 Payment करें</h2>
   <p>UPI ID: <b>7467008398@okbizaxis</b></p>
 
-  <img src="qr.jpg.jpeg" alt="QR Code" class="qr">
+  <img src="qr.jpg.jpeg" class="qr">
 
   <a href="upi://pay?pa=7467008398@okbizaxis&pn=Radhe Printing Press&cu=INR" class="paybtn">
     Pay Now via UPI
   </a>
 
-  <p style="margin-top:10px;font-size:14px;color:#444;">
-    अगर बटन काम न करे, तो QR scan करें
+  <p style="font-size:13px;color:gray;">
+    अगर बटन काम न करे तो QR scan करें
   </p>
 </div>
 
-    <div class="card">
-      <h2 style="margin-top:0">पता</h2>
-      <p><strong>बरला मोड़, छर्रा रोड, अलीगढ़ - 202129</strong></p>
-    </div>
+<div class="card">
+  <h2>पता</h2>
+  <p>बरला मोड़, छर्रा रोड, अलीगढ़ - 202129</p>
+</div>
 
-  </div>
+</div>
 
-  <div class="footer">
-    © Radhe Printing Press • बरला मोड़, छर्रा रोड, अलीगढ़ - 202129
-  </div>
-
-  <a class="floating-whatsapp" href="https://wa.me/917467008398?text=Namaste%20Radhe%20Printing%20Press%2C%20mujhe%20printing%20order%20karna%20hai." target="_blank">💬 WhatsApp</a>
+<a href="https://wa.me/917467008398" class="whatsapp">💬 WhatsApp</a>
 
 </body>
 </html>
